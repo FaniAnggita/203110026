@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Portfolio</string>
+    <string name="text_login">LOGIN</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="fani_anggita">FANI ANGGITA</string>
+    <string name="graphic_designer">Graphic Designer</string>
+    <string name="invite">Invite Me</string>
+    <string name="project_completed">Project Completed</string>
+    <string name="_450">450</string>
+    <string name="redcard">redcard</string>
+    <string name="redcard2">redcard</string>
+    <string name="yellowcard">yellowcard</string>
+    <string name="_5">5</string>
+    <string name="project_running">Project Running</string>
+    <string name="view_my_porfolio">View My Porfolio</string>
+    <string name="about_me">About Me</string>
+    <string name="about_me_dec">Proficient Graphic Designer was knowledgeable about logos, marketing materials, and website design. Demonstrated success at providing complete business services to corporate clients.</string>
+</resources>

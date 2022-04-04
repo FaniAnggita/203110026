@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg" >
+
+<!--    1. Komponen ini untuk menampilkan teks "Login".
+        2. android:id="@+id/login" untuk memberi id komponen ini sebagai identitas yang unik.
+        3. android:layout_marginStart="150dp" dan  android:layout_marginEnd="150dp" untuk memberi jarak kanan dan kiri dari layar.
+        4. android:layout_marginTop="188dp" dan   android:layout_marginEnd="150dp" untuk memberi jarak atas dan bawah dari layar
+        5. android:fontFamily="sans-serif-black" untuk mengatur jenis font
+        6. app:layout_constraintEnd_toEndOf="parent" dan sejenisnya yaitu untuk mengatur layout contraint-->
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/text_login"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--    1. Komponen ini untuk input username
+        2. android:id="@+id/edtUserName" untuk memberi id komponen ini sebagai identitas yang unik.
+        3. android:hint="@string/username" untuk memberi hint atau teks sementara
+        4. android:inputType="textPersonName" untuk mengatur jenis input tesk menjadi textPersonName yang memungkinan sembarangan teks masuk
+        5. android:textColorHint="#757575" untuk mengatur warna teks-->
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+
+<!--    1. Komponen ini untuk input password
+        2. android:id="@+id/edtPassword" untuk memberi id komponen ini sebagai identitas yang unik.
+        3. android:hint="@string/password" untuk memberi hint atau teks sementara
+        4. android:inputType="textPassword" untuk mengatur jenis input tesk menjadi password.
+      -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
+
+<!--    Ini adalah komponen chackbox untuk mengingat data username dan password-->
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+<!--    1. Komponen itu sebagai button login yang akan mengirim data hasil input username dan password ke halaman MainActivity.
+        2. android:id="@+id/btnLogin" untuk memberi nama atau id pada button ini.
+        3. android:layout_marginStart="32dp" dan  android:layout_marginEnd="32dp" untuk memberi jarak kanan dan kiri dari layar.-->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/text_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/remember_me"
+        android:textColor="#757575"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
